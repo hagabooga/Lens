@@ -1,0 +1,44 @@
+.MainMenuButton {
+    width: 466px;
+    height: 154px;
+    margin-left: 100px;
+    margin-bottom: 60px;
+    background-image: url('project://database/Assets/UI/Buttons/Start%20left.png?fileID=2800000&guid=cf68f71e13e985b4493648cdce6c3319&type=3#Start left');
+    background-color: rgba(255, 255, 255, 0);
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    color: rgb(255, 255, 255);
+    font-size: 72px;
+    -unity-font-style: normal;
+    border-left-color: rgb(255, 255, 255);
+    border-right-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+}
+
+.MainMenuButtonRight {
+    background-image: url('project://database/Assets/UI/Buttons/Quit%20left.png?fileID=2800000&guid=9ef4300cce2423745b2c2d4cf1867536&type=3#Quit left');
+    margin-right: 72px;
+    width: 412px;
+    height: 175px;
+}
+
+.Help:hover {
+    background-image: url('project://database/Assets/UI/Buttons/Start%20right.png');
+}
+
+
+#Start:hover {
+    background-image: url('project://database/Assets/UI/Buttons/Start%20right.png?fileID=21300000&guid=dc77c69398aae29499ed7fb1b23d39e1&type=3#Start right');
+}
+
+#Credits:hover {
+    background-image: url('project://database/Assets/UI/Buttons/Quit%20right.png?fileID=21300000&guid=3c777b9661533c240b53a170fc7ebdf9&type=3#Quit right');
+}
+

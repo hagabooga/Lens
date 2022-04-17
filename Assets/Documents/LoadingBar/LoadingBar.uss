@@ -1,0 +1,9 @@
+.unity-progress-bar__background
+{
+    height: 200px;
+}
+
+.unity-progress-bar__title
+{
+    font-size: 12px;
+}
