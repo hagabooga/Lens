@@ -12,11 +12,8 @@ public class MainLifetimeScope : LifetimeScope
     {
         builder.RegisterInstance(musicPlayer);
 
-
-
         builder.Register<LoadingBar>(Lifetime.Singleton).WithParameter(loadingBar.rootVisualElement);
         builder.Register<SceneLoader>(Lifetime.Singleton);
-
 
         builder.RegisterEntryPoint<Main>();
     }

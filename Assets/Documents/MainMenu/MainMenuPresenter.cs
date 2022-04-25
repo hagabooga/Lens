@@ -7,24 +7,14 @@ using Cysharp.Threading.Tasks;
 using System.Threading;
 using System;
 using System.Threading.Tasks;
+using VContainer;
 
 public class MainMenuPresenter : IStartable, IAsyncStartable
 {
     private const float flashInterval = 0.1f;
-    readonly MusicPlayer musicPlayer;
-    readonly MainMenu mainMenu;
-    readonly MainMenuSettings mainMenuSettings;
-    readonly Sprite originalBackground;
-
-    public MainMenuPresenter(MainMenu mainMenu,
-                             MusicPlayer musicPlayer,
-                             MainMenuSettings mainMenuSettings)
-    {
-        this.mainMenu = mainMenu;
-        this.musicPlayer = musicPlayer;
-        this.mainMenuSettings = mainMenuSettings;
-        originalBackground = mainMenu.Background.resolvedStyle.backgroundImage.sprite;
-    }
+    [Inject] readonly MusicPlayer musicPlayer;
+    [Inject] readonly MainMenu mainMenu;
+    [Inject] readonly MainMenuSettings mainMenuSettings;
 
     public void Start()
     {
@@ -51,7 +41,6 @@ public class MainMenuPresenter : IStartable, IAsyncStartable
 
     async UniTask FlashBackground(CancellationToken cancellationToken)
     {
-
         while (!cancellationToken.IsCancellationRequested)
         {
             await UniTask.Delay(TimeSpan.FromSeconds(5));
@@ -59,8 +48,6 @@ public class MainMenuPresenter : IStartable, IAsyncStartable
             {
                 await Flash();
             }
-
-            // await UniTask.Yield();
         }
     }
 
@@ -79,6 +66,6 @@ public class MainMenuPresenter : IStartable, IAsyncStartable
 
     private void ToOringalBackground()
     {
-        mainMenu.Background.style.backgroundImage = new StyleBackground(originalBackground);
+        mainMenu.Background.style.backgroundImage = new StyleBackground(mainMenuSettings.OriginalBackground);
     }
 }

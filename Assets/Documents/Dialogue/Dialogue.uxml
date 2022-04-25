@@ -1,0 +1,18 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="Root" style="width: 100%; height: 100%;">
+        <ui:VisualElement name="Top" style="flex-grow: 1;">
+            <ui:VisualElement name="FirstRow" style="flex-direction: row-reverse; margin-top: 10px; margin-right: 10px; margin-left: 10px; margin-bottom: 10px;">
+                <ui:Button text="&#10;" display-tooltip-when-elided="true" name="Settings" style="background-color: rgba(255, 255, 255, 0); border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; background-image: url(&apos;project://database/Assets/UI/Settings.png?fileID=21300000&amp;guid=906e56d20aa5df7488452acdd25d3173&amp;type=3#Settings&apos;); -unity-background-scale-mode: scale-to-fit; height: 80px; width: 80px;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="Bottom" style="flex-grow: 1; flex-direction: column-reverse; margin-left: 20px; margin-right: 20px; margin-bottom: 20px; align-items: center;">
+            <ui:VisualElement name="Dialogue" style="background-image: url(&apos;project://database/Assets/UI/Character/Data/MC/UI/dialogueBoxLeft.png?fileID=2800000&amp;guid=c32350805a799954b85852fc0b840d64&amp;type=3#dialogueBoxLeft&apos;); width: 1100px; height: 250px; -unity-background-scale-mode: scale-to-fit; flex-direction: column; align-items: flex-start; justify-content: flex-start;">
+                <ui:Label text="Cam" display-tooltip-when-elided="true" name="SpeakerName" style="flex-wrap: nowrap; align-items: stretch; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; margin-left: 18px; margin-top: 14px; height: 55px; width: 159px; -unity-text-align: middle-center; font-size: 32px; color: rgb(255, 255, 255);" />
+                <ui:VisualElement style="flex-direction: row; width: 1079px; height: 29px;">
+                    <ui:Label text="Waah~! What a nice day. Good to get something other than rain, huh?" display-tooltip-when-elided="true" name="Text" style="padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; margin-left: 88px; color: rgb(255, 255, 255); font-size: 28px; height: 153px; width: 926px;" />
+                    <ui:VisualElement name="Arrow" style="background-image: url(&apos;project://database/Assets/UI/Character/Data/MC/UI/arrow.png?fileID=2800000&amp;guid=92ef3b319544ccf46817f75a3263224e&amp;type=3#arrow&apos;); -unity-background-scale-mode: scale-to-fit; width: 32px; height: 279px; margin-left: 19px;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

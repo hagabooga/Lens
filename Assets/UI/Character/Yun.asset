@@ -9,8 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2da9864446d7d3b4ea82fbc4a479902b, type: 3}
-  m_Name: MainMenuSettings
+  m_Script: {fileID: 11500000, guid: cf82cef3b92c337418eac964d66ddf96, type: 3}
+  m_Name: Yun
   m_EditorClassIdentifier: 
-  originalBackground: {fileID: 21300000, guid: 3ee774bf8938d7243bc8ee2e164963ec, type: 3}
-  flashBackground: {fileID: 21300000, guid: ccd82bb5497d18747830e52748f51080, type: 3}
+  _poses:
+    keys: 
+    values: []

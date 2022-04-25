@@ -4,7 +4,7 @@
 
 A remake of the game `Lens` https://github.com/hagabooga/OurVeryCoolDatingSim.
 
-The game was made at a game jam but is incomplete. This repo aims to complete the game using new technology and features.
+The orignal game was made at a game jam but is incomplete. This repo aims to complete the game using new technology and features.
 
 ### Built With
 
