@@ -9,18 +9,18 @@ using VContainer.Unity;
 
 public class Main : IAsyncStartable
 {
-    readonly LoadingBar loadingBar;
     readonly SceneLoader sceneLoader;
 
-    public Main(SceneLoader sceneLoader, LoadingBar loadingBar)
+    public Main(SceneLoader sceneLoader)
     {
         this.sceneLoader = sceneLoader;
-        this.loadingBar = loadingBar;
     }
 
     public async UniTask StartAsync(CancellationToken cancellation)
     {
-        UniTask uniTask = sceneLoader.LoadSceneAsync("MainMenu");
+        UniTask uniTask = sceneLoader.LoadSceneAsync("MainMenu", false);
         await uniTask;
     }
+
+
 }

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 118485a940256ab41a0711107ddc90b8, type: 3}
-  m_Name: DialogueSettings
+  m_Name: MainGameSetttings
   m_EditorClassIdentifier: 
   backgrounds: {fileID: 11400000, guid: 0e9635b991243dd4d840e0ffbdb859df, type: 2}
   mc: {fileID: 11400000, guid: 58bbc347348884e44974c12babb04283, type: 2}

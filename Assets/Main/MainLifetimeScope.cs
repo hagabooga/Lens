@@ -6,7 +6,7 @@ using VContainer.Unity;
 public class MainLifetimeScope : LifetimeScope
 {
     [SerializeField] MusicPlayer musicPlayer;
-    [SerializeField] UIDocument loadingBar;
+    [SerializeField] UIDocument loadingBar, blackFader;
 
     protected override void Configure(IContainerBuilder builder)
     {

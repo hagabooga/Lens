@@ -12,15 +12,27 @@ using VContainer;
 public class MainMenuPresenter : IStartable, IAsyncStartable
 {
     private const float flashInterval = 0.1f;
-    [Inject] readonly MusicPlayer musicPlayer;
-    [Inject] readonly MainMenu mainMenu;
-    [Inject] readonly MainMenuSettings mainMenuSettings;
+    readonly MusicPlayer musicPlayer;
+    readonly MainMenu mainMenu;
+    readonly MainMenuSettings mainMenuSettings;
+    readonly SceneLoader sceneLoader;
+
+    public MainMenuPresenter(MusicPlayer musicPlayer,
+                             MainMenu mainMenu,
+                             MainMenuSettings mainMenuSettings,
+                             SceneLoader sceneLoader)
+    {
+        this.musicPlayer = musicPlayer;
+        this.mainMenu = mainMenu;
+        this.mainMenuSettings = mainMenuSettings;
+        this.sceneLoader = sceneLoader;
+    }
 
     public void Start()
     {
         mainMenu.Start.clicked += () =>
         {
-            Debug.Log("Start pressed");
+            sceneLoader.LoadSceneAsync("MainGame");
         };
         mainMenu.Help.clicked += () =>
         {

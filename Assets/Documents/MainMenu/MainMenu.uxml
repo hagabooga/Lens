@@ -1,13 +1,13 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/Documents/MainMenu/MainMenu.uss?fileID=7433441132597879392&amp;guid=c3422c2279cc1a54cace2272edf5943f&amp;type=3#MainMenu" />
-    <ui:VisualElement name="Background" picking-mode="Ignore" style="background-image: url(&apos;project://database/Assets/BG%20Art/Backgrounds/RealWorld/Bedroom.png?fileID=21300000&amp;guid=3ee774bf8938d7243bc8ee2e164963ec&amp;type=3#Bedroom&apos;); width: 100%; height: 100%; flex-direction: row;">
+    <ui:VisualElement name="Background" picking-mode="Ignore" style="background-image: url(&apos;project://database/Assets/UI/Backgrounds/RealWorld/Bedroom.png?fileID=21300000&amp;guid=3ee774bf8938d7243bc8ee2e164963ec&amp;type=3#Bedroom&apos;); width: 100%; height: 100%; flex-direction: row;">
         <ui:VisualElement name="Left" style="width: auto; flex-grow: 1; flex-direction: column-reverse;">
-            <ui:Button text="START" display-tooltip-when-elided="true" name="Start" class="MainMenuButton" />
-            <ui:VisualElement name="Logo" style="background-image: url(&apos;project://database/Assets/BG%20Art/LENS.png?fileID=21300000&amp;guid=8d1bc268a4a6e3746bfa79e58fb2b210&amp;type=3#LENS&apos;); width: 616px; height: 540px; -unity-background-scale-mode: scale-to-fit; margin-left: 176px;" />
+            <ui:Button text="START" display-tooltip-when-elided="true" name="Start" class="MainMenuButton" style="-unity-background-scale-mode: scale-to-fit;" />
+            <ui:VisualElement name="Logo" style="background-image: url(&apos;project://database/Assets/UI/LENS.png?fileID=21300000&amp;guid=8d1bc268a4a6e3746bfa79e58fb2b210&amp;type=3#LENS&apos;); width: 616px; height: 540px; -unity-background-scale-mode: scale-to-fit; margin-left: 176px;" />
         </ui:VisualElement>
         <ui:VisualElement name="Right" picking-mode="Ignore" style="flex-grow: 1; flex-direction: column-reverse; align-items: flex-end;">
             <ui:Button text="CREDITS" display-tooltip-when-elided="true" name="Credits" enable-rich-text="true" class="MainMenuButton MainMenuButtonRight" style="-unity-background-scale-mode: scale-to-fit;" />
-            <ui:Button text="HELP" display-tooltip-when-elided="true" name="Help" class="MainMenuButton MainMenuButtonRight Help" style="background-image: url(&apos;project://database/Assets/UI/Buttons/Help%20left.png?fileID=21300000&amp;guid=3e6df002bd708184690d4c2b0ea9e0c5&amp;type=3#Help left&apos;); -unity-background-scale-mode: scale-to-fit;" />
+            <ui:Button text="HELP" display-tooltip-when-elided="true" name="Help" class="MainMenuButton MainMenuButtonRight Help" style="background-image: url(&apos;project://database/Assets/UI/RedButton.png?fileID=21300000&amp;guid=3e6df002bd708184690d4c2b0ea9e0c5&amp;type=3#RedButton&apos;); -unity-background-scale-mode: scale-to-fit;" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

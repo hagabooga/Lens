@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Documents/MainMenu/MainMenu.unity
     guid: 700871e6bc19bf848905bda7fad3c1f6
+  - enabled: 1
+    path: Assets/MainGame/MainGame.unity
+    guid: 5f134b23336fc6b48b019af9f3fa9054
   m_configObjects: {}

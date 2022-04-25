@@ -4,7 +4,7 @@ using UnityEngine;
 
 
 [CreateAssetMenu(menuName = "Lens Settings/Dialogue")]
-public class DialogueSettings : ScriptableObject
+public class MainGameSettings : ScriptableObject
 {
     [SerializeField] Backgrounds backgrounds;
     [SerializeField] CharacterInfo mc, cam, yun;

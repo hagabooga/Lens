@@ -1,7 +1,7 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <ui:VisualElement style="width: 100%; height: 100%; flex-direction: row;">
+    <ui:VisualElement name="Background" style="width: 100%; height: 100%; flex-direction: row; background-image: url(&apos;project://database/Assets/UI/Backgrounds/RealWorld/Outside.png?fileID=2800000&amp;guid=3c431977844ed6540b07246c10a1f425&amp;type=3#Outside&apos;);">
         <ui:VisualElement style="flex-direction: column-reverse; height: 100%; flex-grow: 1; align-items: flex-end; justify-content: flex-start;">
-            <ui:VisualElement name="CharacterLeft" style="background-image: url(&apos;project://database/Assets/UI/Character/Data/Yun/Poses/2_opensmile.png?fileID=2800000&amp;guid=03a686a3a07826247a54b2d2ad4d14c5&amp;type=3#2_opensmile&apos;); width: 800px; -unity-background-scale-mode: scale-to-fit; height: 1000px; flex-shrink: 1;" />
+            <ui:VisualElement name="CharacterLeft" style="background-image: url(&apos;project://database/Assets/UI/Character/Data/Yun/Poses/2_opensmile.png?fileID=2800000&amp;guid=03a686a3a07826247a54b2d2ad4d14c5&amp;type=3#2_opensmile&apos;); width: 800px; -unity-background-scale-mode: scale-to-fit; height: 1000px; flex-shrink: 1; visibility: visible;" />
         </ui:VisualElement>
         <ui:VisualElement style="flex-direction: column-reverse; height: 100%; flex-grow: 1; align-items: flex-start;">
             <ui:VisualElement name="CharacterRight" style="background-image: url(&apos;project://database/Assets/UI/Character/Data/Cam/Poses/1_blush.png?fileID=2800000&amp;guid=98c6167602b76af49b8ce002c72327d9&amp;type=3#1_blush&apos;); -unity-background-scale-mode: scale-to-fit; height: 1000px; width: 800px;" />
